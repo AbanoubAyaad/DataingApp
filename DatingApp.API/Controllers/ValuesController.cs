@@ -19,7 +19,7 @@ namespace DatingApp.API.Controllers
         }
         public async Task<IActionResult> get()
         {
-            return Ok(await _context.Values.ToListAsync()) ;
+            return Ok(await _context.Values.ToListAsync());
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> get (int id)
